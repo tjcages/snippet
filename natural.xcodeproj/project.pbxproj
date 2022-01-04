@@ -11,15 +11,54 @@
 		90C5C2462781608300F3EF86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C2452781608300F3EF86 /* ContentView.swift */; };
 		90C5C2482781608400F3EF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C5C2472781608400F3EF86 /* Assets.xcassets */; };
 		90C5C24B2781608400F3EF86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C5C24A2781608400F3EF86 /* Preview Assets.xcassets */; };
+		90C5C25527816C2E00F3EF86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C25427816C2E00F3EF86 /* Extensions.swift */; };
+		90C5C25B278170ED00F3EF86 /* SystemColors in Frameworks */ = {isa = PBXBuildFile; productRef = 90C5C25A278170ED00F3EF86 /* SystemColors */; };
+		90C5C25E27822C7500F3EF86 /* DetailWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C25D27822C7500F3EF86 /* DetailWindowController.swift */; };
+		90C5C260278262D500F3EF86 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C25F278262D500F3EF86 /* ListItem.swift */; };
+		90C5C26227826A5900F3EF86 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26127826A5900F3EF86 /* Search.swift */; };
+		90C5C26427826AD900F3EF86 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26327826AD900F3EF86 /* TextView.swift */; };
+		90C5C26727826B5900F3EF86 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26627826B5900F3EF86 /* ItemList.swift */; };
+		90C5C26927826BC200F3EF86 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26827826BC200F3EF86 /* AddItem.swift */; };
+		90C5C26C27826E5A00F3EF86 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26B27826E5A00F3EF86 /* Data.swift */; };
+		90C5C26E278271B100F3EF86 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26D278271B100F3EF86 /* MainButton.swift */; };
+		90C5C27027828DF900F3EF86 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26F27828DF900F3EF86 /* Links.swift */; };
+		90C5C2782782A47200F3EF86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90C5C2772782A47200F3EF86 /* GoogleService-Info.plist */; };
+		90C5C27A2782A4CA00F3EF86 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C2792782A4CA00F3EF86 /* Store.swift */; };
+		90C5C27C2782A50700F3EF86 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C27B2782A50700F3EF86 /* User.swift */; };
+		90C5C27E2783988700F3EF86 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C27D2783988700F3EF86 /* PopoverView.swift */; };
+		90C5C28027839AB400F3EF86 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C27F27839AB400F3EF86 /* WebView.swift */; };
+		90C5C28227839D3900F3EF86 /* SafariPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C28127839D3900F3EF86 /* SafariPreview.swift */; };
+		90C5C2842783ACB500F3EF86 /* KeyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C2832783ACB500F3EF86 /* KeyEvents.swift */; };
+		D98413F887CF8C6DC52B153B /* Pods_natural.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		90C5C2402781608300F3EF86 /* natural.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = natural.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C5C2432781608300F3EF86 /* naturalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = naturalApp.swift; sourceTree = "<group>"; };
-		90C5C2452781608300F3EF86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90C5C2452781608300F3EF86 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		90C5C2472781608400F3EF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90C5C24A2781608400F3EF86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90C5C24C2781608400F3EF86 /* natural.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = natural.entitlements; sourceTree = "<group>"; };
+		90C5C25427816C2E00F3EF86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		90C5C25D27822C7500F3EF86 /* DetailWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWindowController.swift; sourceTree = "<group>"; };
+		90C5C25F278262D500F3EF86 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		90C5C26127826A5900F3EF86 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		90C5C26327826AD900F3EF86 /* TextView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		90C5C26627826B5900F3EF86 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		90C5C26827826BC200F3EF86 /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
+		90C5C26B27826E5A00F3EF86 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		90C5C26D278271B100F3EF86 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		90C5C26F27828DF900F3EF86 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		90C5C2772782A47200F3EF86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90C5C2792782A4CA00F3EF86 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		90C5C27B2782A50700F3EF86 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		90C5C27D2783988700F3EF86 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		90C5C27F27839AB400F3EF86 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		90C5C28127839D3900F3EF86 /* SafariPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariPreview.swift; sourceTree = "<group>"; };
+		90C5C2832783ACB500F3EF86 /* KeyEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEvents.swift; sourceTree = "<group>"; };
+		B6528201DA5E043CBCF4A978 /* Pods-natural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.debug.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.debug.xcconfig"; sourceTree = "<group>"; };
+		D0E7EE16A0446EA1E6C4FDE7 /* Pods-natural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.release.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.release.xcconfig"; sourceTree = "<group>"; };
+		D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_natural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +66,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C5C25B278170ED00F3EF86 /* SystemColors in Frameworks */,
+				D98413F887CF8C6DC52B153B /* Pods_natural.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		704F2BEC03CEA9D1A855F3E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		868756308725D81AD2A55E6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6528201DA5E043CBCF4A978 /* Pods-natural.debug.xcconfig */,
+				D0E7EE16A0446EA1E6C4FDE7 /* Pods-natural.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		90C5C2372781608300F3EF86 = {
 			isa = PBXGroup;
 			children = (
 				90C5C2422781608300F3EF86 /* natural */,
 				90C5C2412781608300F3EF86 /* Products */,
+				868756308725D81AD2A55E6F /* Pods */,
+				704F2BEC03CEA9D1A855F3E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,10 +112,17 @@
 		90C5C2422781608300F3EF86 /* natural */ = {
 			isa = PBXGroup;
 			children = (
-				90C5C2432781608300F3EF86 /* naturalApp.swift */,
-				90C5C2452781608300F3EF86 /* ContentView.swift */,
+				90C5C26A27826E4F00F3EF86 /* Data */,
+				90C5C27227828E1300F3EF86 /* Delegate */,
+				90C5C25C27822C6400F3EF86 /* Helpers */,
+				90C5C27127828DFC00F3EF86 /* ViewModel */,
+				90C5C27427828E4300F3EF86 /* Home */,
+				90C5C26527826B3B00F3EF86 /* Components */,
+				90C5C25627816DD800F3EF86 /* Views */,
+				90C5C27327828E2400F3EF86 /* Utilities */,
 				90C5C2472781608400F3EF86 /* Assets.xcassets */,
 				90C5C24C2781608400F3EF86 /* natural.entitlements */,
+				90C5C2772782A47200F3EF86 /* GoogleService-Info.plist */,
 				90C5C2492781608400F3EF86 /* Preview Content */,
 			);
 			path = natural;
@@ -69,6 +136,80 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		90C5C25627816DD800F3EF86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C25F278262D500F3EF86 /* ListItem.swift */,
+				90C5C26127826A5900F3EF86 /* Search.swift */,
+				90C5C26327826AD900F3EF86 /* TextView.swift */,
+				90C5C26D278271B100F3EF86 /* MainButton.swift */,
+				90C5C27D2783988700F3EF86 /* PopoverView.swift */,
+				90C5C27F27839AB400F3EF86 /* WebView.swift */,
+				90C5C28127839D3900F3EF86 /* SafariPreview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90C5C25C27822C6400F3EF86 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C25D27822C7500F3EF86 /* DetailWindowController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		90C5C26527826B3B00F3EF86 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C26627826B5900F3EF86 /* ItemList.swift */,
+				90C5C26827826BC200F3EF86 /* AddItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		90C5C26A27826E4F00F3EF86 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C26B27826E5A00F3EF86 /* Data.swift */,
+				90C5C2792782A4CA00F3EF86 /* Store.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		90C5C27127828DFC00F3EF86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C26F27828DF900F3EF86 /* Links.swift */,
+				90C5C27B2782A50700F3EF86 /* User.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90C5C27227828E1300F3EF86 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C2432781608300F3EF86 /* naturalApp.swift */,
+				90C5C2832783ACB500F3EF86 /* KeyEvents.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		90C5C27327828E2400F3EF86 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C25427816C2E00F3EF86 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		90C5C27427828E4300F3EF86 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				90C5C2452781608300F3EF86 /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +217,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90C5C24F2781608400F3EF86 /* Build configuration list for PBXNativeTarget "natural" */;
 			buildPhases = (
+				88E5127B6C9E3FE13FD41714 /* [CP] Check Pods Manifest.lock */,
 				90C5C23C2781608300F3EF86 /* Sources */,
 				90C5C23D2781608300F3EF86 /* Frameworks */,
 				90C5C23E2781608300F3EF86 /* Resources */,
+				EC6087762CADE8CAB04469F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = natural;
+			packageProductDependencies = (
+				90C5C25A278170ED00F3EF86 /* SystemColors */,
+			);
 			productName = natural;
 			productReference = 90C5C2402781608300F3EF86 /* natural.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +259,9 @@
 				Base,
 			);
 			mainGroup = 90C5C2372781608300F3EF86;
+			packageReferences = (
+				90C5C259278170ED00F3EF86 /* XCRemoteSwiftPackageReference "swiftui-system-colors" */,
+			);
 			productRefGroup = 90C5C2412781608300F3EF86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,18 +278,77 @@
 			files = (
 				90C5C24B2781608400F3EF86 /* Preview Assets.xcassets in Resources */,
 				90C5C2482781608400F3EF86 /* Assets.xcassets in Resources */,
+				90C5C2782782A47200F3EF86 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88E5127B6C9E3FE13FD41714 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-natural-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6087762CADE8CAB04469F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-natural/Pods-natural-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-natural/Pods-natural-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-natural/Pods-natural-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90C5C23C2781608300F3EF86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C5C260278262D500F3EF86 /* ListItem.swift in Sources */,
+				90C5C28027839AB400F3EF86 /* WebView.swift in Sources */,
+				90C5C26C27826E5A00F3EF86 /* Data.swift in Sources */,
 				90C5C2462781608300F3EF86 /* ContentView.swift in Sources */,
+				90C5C27E2783988700F3EF86 /* PopoverView.swift in Sources */,
+				90C5C25527816C2E00F3EF86 /* Extensions.swift in Sources */,
+				90C5C26427826AD900F3EF86 /* TextView.swift in Sources */,
+				90C5C26727826B5900F3EF86 /* ItemList.swift in Sources */,
+				90C5C27C2782A50700F3EF86 /* User.swift in Sources */,
+				90C5C26927826BC200F3EF86 /* AddItem.swift in Sources */,
+				90C5C2842783ACB500F3EF86 /* KeyEvents.swift in Sources */,
+				90C5C27A2782A4CA00F3EF86 /* Store.swift in Sources */,
+				90C5C27027828DF900F3EF86 /* Links.swift in Sources */,
+				90C5C28227839D3900F3EF86 /* SafariPreview.swift in Sources */,
+				90C5C26227826A5900F3EF86 /* Search.swift in Sources */,
+				90C5C25E27822C7500F3EF86 /* DetailWindowController.swift in Sources */,
 				90C5C2442781608300F3EF86 /* naturalApp.swift in Sources */,
+				90C5C26E278271B100F3EF86 /* MainButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,16 +472,20 @@
 		};
 		90C5C2502781608400F3EF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6528201DA5E043CBCF4A978 /* Pods-natural.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = natural/natural.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"natural/Preview Content\"";
+				DEVELOPMENT_TEAM = HE452HL4WS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,16 +501,20 @@
 		};
 		90C5C2512781608400F3EF86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E7EE16A0446EA1E6C4FDE7 /* Pods-natural.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = natural/natural.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"natural/Preview Content\"";
+				DEVELOPMENT_TEAM = HE452HL4WS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,6 +550,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90C5C259278170ED00F3EF86 /* XCRemoteSwiftPackageReference "swiftui-system-colors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/diniska/swiftui-system-colors";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90C5C25A278170ED00F3EF86 /* SystemColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90C5C259278170ED00F3EF86 /* XCRemoteSwiftPackageReference "swiftui-system-colors" */;
+			productName = SystemColors;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90C5C2382781608300F3EF86 /* Project object */;
 }
