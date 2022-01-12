@@ -39,6 +39,7 @@
 		90DDCF47278E3B9B00F3BF44 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDCF46278E3B9B00F3BF44 /* MainView.swift */; };
 		90DDCF4A278E460800F3BF44 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 90DDCF49278E460800F3BF44 /* Introspect */; };
 		90DDCF4C278E4A4100F3BF44 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDCF4B278E4A4100F3BF44 /* Timer.swift */; };
+		90DDCF4E278E5A1B00F3BF44 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 90DDCF4D278E5A1B00F3BF44 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,7 @@
 		90C5C2832783ACB500F3EF86 /* KeyEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEvents.swift; sourceTree = "<group>"; };
 		90DDCF46278E3B9B00F3BF44 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		90DDCF4B278E4A4100F3BF44 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		90DDCF4D278E5A1B00F3BF44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6528201DA5E043CBCF4A978 /* Pods-natural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.debug.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E7EE16A0446EA1E6C4FDE7 /* Pods-natural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.release.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.release.xcconfig"; sourceTree = "<group>"; };
 		D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_natural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +159,7 @@
 				9092202A278E34FE001864CF /* Main.storyboard */,
 				90C5C24C2781608400F3EF86 /* natural.entitlements */,
 				90C5C2772782A47200F3EF86 /* GoogleService-Info.plist */,
+				90DDCF4D278E5A1B00F3BF44 /* README.md */,
 				90C5C2492781608400F3EF86 /* Preview Content */,
 			);
 			path = natural;
@@ -321,6 +324,7 @@
 			files = (
 				90C5C24B2781608400F3EF86 /* Preview Assets.xcassets in Resources */,
 				90C5C2482781608400F3EF86 /* Assets.xcassets in Resources */,
+				90DDCF4E278E5A1B00F3BF44 /* README.md in Resources */,
 				90C5C2782782A47200F3EF86 /* GoogleService-Info.plist in Resources */,
 				9092202B278E34FE001864CF /* Main.storyboard in Resources */,
 			);
