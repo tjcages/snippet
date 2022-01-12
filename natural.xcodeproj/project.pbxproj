@@ -34,12 +34,12 @@
 		90C5C28027839AB400F3EF86 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C27F27839AB400F3EF86 /* WebView.swift */; };
 		90C5C28227839D3900F3EF86 /* SafariPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C28127839D3900F3EF86 /* SafariPreview.swift */; };
 		90C5C2842783ACB500F3EF86 /* KeyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C2832783ACB500F3EF86 /* KeyEvents.swift */; };
-		90C8CDB82784D6F700384ACA /* Pods_natural.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */; };
-		90C8CDB92784D6F700384ACA /* Pods_natural.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90C8CDB92784D6F700384ACA /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90DDCF47278E3B9B00F3BF44 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDCF46278E3B9B00F3BF44 /* MainView.swift */; };
 		90DDCF4A278E460800F3BF44 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 90DDCF49278E460800F3BF44 /* Introspect */; };
 		90DDCF4C278E4A4100F3BF44 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDCF4B278E4A4100F3BF44 /* Timer.swift */; };
 		90DDCF4E278E5A1B00F3BF44 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 90DDCF4D278E5A1B00F3BF44 /* README.md */; };
+		C8F7AB74D1AC0BAAC9F1F947 /* Pods_natural.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BCED08D8A001005941F99B /* Pods_natural.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				90C8CDB92784D6F700384ACA /* Pods_natural.framework in Embed Frameworks */,
+				90C8CDB92784D6F700384ACA /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		011BF3AFFB698B0EBC1A6351 /* Pods-natural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.debug.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.debug.xcconfig"; sourceTree = "<group>"; };
+		69BCED08D8A001005941F99B /* Pods_natural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_natural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90922020278E3179001864CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90922023278E31B8001864CF /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		90922025278E31E0001864CF /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
@@ -89,9 +91,7 @@
 		90DDCF46278E3B9B00F3BF44 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		90DDCF4B278E4A4100F3BF44 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		90DDCF4D278E5A1B00F3BF44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B6528201DA5E043CBCF4A978 /* Pods-natural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.debug.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.debug.xcconfig"; sourceTree = "<group>"; };
-		D0E7EE16A0446EA1E6C4FDE7 /* Pods-natural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.release.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.release.xcconfig"; sourceTree = "<group>"; };
-		D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_natural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3340BC05CFEEA63A33FBA6 /* Pods-natural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.release.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,28 +99,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90C8CDB82784D6F700384ACA /* Pods_natural.framework in Frameworks */,
 				90DDCF4A278E460800F3BF44 /* Introspect in Frameworks */,
 				90C5C25B278170ED00F3EF86 /* SystemColors in Frameworks */,
+				C8F7AB74D1AC0BAAC9F1F947 /* Pods_natural.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		704F2BEC03CEA9D1A855F3E6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D3882FCBA2B573A14EB04AC9 /* Pods_natural.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		868756308725D81AD2A55E6F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6528201DA5E043CBCF4A978 /* Pods-natural.debug.xcconfig */,
-				D0E7EE16A0446EA1E6C4FDE7 /* Pods-natural.release.xcconfig */,
+				011BF3AFFB698B0EBC1A6351 /* Pods-natural.debug.xcconfig */,
+				FA3340BC05CFEEA63A33FBA6 /* Pods-natural.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -131,7 +123,7 @@
 				90C5C2422781608300F3EF86 /* natural */,
 				90C5C2412781608300F3EF86 /* Products */,
 				868756308725D81AD2A55E6F /* Pods */,
-				704F2BEC03CEA9D1A855F3E6 /* Frameworks */,
+				D5B38D23867AAA3B82089CDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -253,6 +245,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		D5B38D23867AAA3B82089CDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69BCED08D8A001005941F99B /* Pods_natural.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,12 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90C5C24F2781608400F3EF86 /* Build configuration list for PBXNativeTarget "natural" */;
 			buildPhases = (
-				88E5127B6C9E3FE13FD41714 /* [CP] Check Pods Manifest.lock */,
+				169CD3D53DB430FC263F781F /* [CP] Check Pods Manifest.lock */,
 				90C5C23C2781608300F3EF86 /* Sources */,
 				90C5C23D2781608300F3EF86 /* Frameworks */,
 				90C5C23E2781608300F3EF86 /* Resources */,
-				EC6087762CADE8CAB04469F2 /* [CP] Embed Pods Frameworks */,
 				90C8CDBA2784D6F700384ACA /* Embed Frameworks */,
+				205C48D6A0B47F3FF0E778CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,7 +333,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		88E5127B6C9E3FE13FD41714 /* [CP] Check Pods Manifest.lock */ = {
+		169CD3D53DB430FC263F781F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,7 +355,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC6087762CADE8CAB04469F2 /* [CP] Embed Pods Frameworks */ = {
+		205C48D6A0B47F3FF0E778CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,7 +528,7 @@
 		};
 		90C5C2502781608400F3EF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6528201DA5E043CBCF4A978 /* Pods-natural.debug.xcconfig */;
+			baseConfigurationReference = 011BF3AFFB698B0EBC1A6351 /* Pods-natural.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -537,9 +537,10 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"natural/Preview Content\"";
 				DEVELOPMENT_TEAM = HE452HL4WS;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = natural/Info.plist;
@@ -550,7 +551,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylerj.natural;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -560,7 +561,7 @@
 		};
 		90C5C2512781608400F3EF86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0E7EE16A0446EA1E6C4FDE7 /* Pods-natural.release.xcconfig */;
+			baseConfigurationReference = FA3340BC05CFEEA63A33FBA6 /* Pods-natural.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -569,9 +570,10 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"natural/Preview Content\"";
 				DEVELOPMENT_TEAM = HE452HL4WS;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = natural/Info.plist;
@@ -582,7 +584,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylerj.natural;
 				PRODUCT_NAME = "lil links";
 				SWIFT_EMIT_LOC_STRINGS = YES;
