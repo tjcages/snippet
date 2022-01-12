@@ -5,7 +5,7 @@
 //  Created by Tyler Cagle on 1/2/22.
 //
 
-import Foundation
+import Combine
 import SwiftUI
 import FavIcon
 
@@ -83,7 +83,9 @@ struct ListItem: View {
         .tag(index)
         .onHover { hovering in
             selectKeeper = index
-            
+        }
+        .onLongHover(duration: 0.6) { hovering in
+            print(hovering)
             if hovering {
                 isPopover = true
             } else {

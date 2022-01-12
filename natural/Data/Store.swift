@@ -10,15 +10,37 @@ import Firebase
 import Combine
 import FirebaseFirestore
 
-let db = Firestore.firestore()
-
 class SessionStore: ObservableObject {
     
     @Published var links: [Links] = []
     
+    var db: Firestore
+    
     var didChange = PassthroughSubject<SessionStore, Never>()
     var session: User? { didSet { self.didChange.send(self) }}
     var handle: AuthStateDidChangeListenerHandle?
+    
+    init() {
+        // Configure the Firestore database
+        FirebaseApp.configure()
+        
+        let settings = FirestoreSettings()
+        settings.isPersistenceEnabled = false
+                
+        db = Firestore.firestore()
+        db.settings = settings
+        
+        // Add a notification if a webpage is opened
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loadStore), name: Notification.Name("ViewDidAppear"), object: nil)
+    }
+    
+    @objc func loadStore() {
+        if session != nil {
+            listen()
+        } else {
+            signInAnonymously()
+        }
+    }
     
     func listen () {
         // monitor authentication changes using firebase
@@ -29,6 +51,10 @@ class SessionStore: ObservableObject {
                 self.session = User(
                     uid: user.uid
                 )
+                
+                if self.links.count == 0 {
+                    self.getUserLinks()
+                }
             } else {
                 // if we don't have a user, set our session to nil
                 self.session = nil
@@ -97,6 +123,7 @@ class SessionStore: ObservableObject {
                     for document in querySnapshot!.documents {
                         let link = Links(id: document.documentID, dictionary: document.data())
                         self.links.append(link)
+                        print(link)
                     }
                 }
             }

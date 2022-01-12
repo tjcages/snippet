@@ -30,10 +30,12 @@ struct ItemList: View {
         let item = data[index - 1]
         guard let link = item.link else { return }
         openURL(link)
+        print("Posting")
+        NotificationCenter.default.post(name: Notification.Name("WebPageOpened"), object: nil)
     }
     
     func moveActiveTodos(fromOffsets source: IndexSet, toOffset destination: Int) {
-      demoData.move(fromOffsets: source, toOffset: destination)
+        demoData.move(fromOffsets: source, toOffset: destination)
     }
     
     var body: some View {
@@ -54,16 +56,9 @@ struct ItemList: View {
             List(data.indexed(), id: \.1.self, selection: $selectKeeper) { index, item in
                 ListItem(index: index + 1, item: item, selectKeeper: $selectKeeper)
             }
-            .padding([.top, .bottom], 12)
+            .removeBackground()
+            .padding([.bottom], 12)
             .contextMenu {
-//                Button {
-//                    print("Editing")
-////                    addingLink.toggle()
-//                } label: {
-//                    Text("Edit item")
-//                        .font(.system(size: 14, weight: .regular, design: .rounded))
-//                }
-                
                 Button {
                     if let index = selectKeeper {
                         let id = session.links[index - 1].id
@@ -83,6 +78,29 @@ struct ItemList: View {
             }
             
             Spacer()
+            
+            HStack {
+                // Button, that when tapped shows 3 options
+                Menu {
+                    Button(action: {
+                        
+                    }) {
+                        Label("Add", systemImage: "plus.circle")
+                    }
+                    Button(action: {
+                        
+                    }) {
+                        Label("Delete", systemImage: "minus.circle")
+                    }
+                    Button(action: {
+                        
+                    }) {
+                        Label("Edit", systemImage: "pencil.circle")
+                    }
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
         }
         .onReceive(keyInputSubject) {
             if let index = selectKeeper {
@@ -96,12 +114,13 @@ struct ItemList: View {
                     if index > 0 {
                         selectKeeper = index - 1
                     }
-                } else if $0 == KeyEquivalent.return {
-                    // keystroke is return – open link
-                    if let index = selectKeeper {
-                        openCurrentLink(index)
-                    }
                 }
+                //                else if $0 == KeyEquivalent.return {
+                //                    // keystroke is return – open link
+                //                    if let index = selectKeeper {
+                //                        openCurrentLink(index)
+                //                    }
+                //                }
             }
         }
     }

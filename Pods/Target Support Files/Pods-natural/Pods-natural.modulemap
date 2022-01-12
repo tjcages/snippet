@@ -1,0 +1,6 @@
+framework module Pods_natural {
+  umbrella header "Pods-natural-umbrella.h"
+
+  export *
+  module * { export * }
+}
