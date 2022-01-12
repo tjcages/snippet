@@ -35,7 +35,6 @@
 		90C5C28227839D3900F3EF86 /* SafariPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C28127839D3900F3EF86 /* SafariPreview.swift */; };
 		90C5C2842783ACB500F3EF86 /* KeyEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C2832783ACB500F3EF86 /* KeyEvents.swift */; };
 		90C8CDB92784D6F700384ACA /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		90DDCF47278E3B9B00F3BF44 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDCF46278E3B9B00F3BF44 /* MainView.swift */; };
 		90DDCF4A278E460800F3BF44 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 90DDCF49278E460800F3BF44 /* Introspect */; };
 		90DDCF4C278E4A4100F3BF44 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDCF4B278E4A4100F3BF44 /* Timer.swift */; };
 		90DDCF4E278E5A1B00F3BF44 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 90DDCF4D278E5A1B00F3BF44 /* README.md */; };
@@ -88,7 +87,6 @@
 		90C5C27F27839AB400F3EF86 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		90C5C28127839D3900F3EF86 /* SafariPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariPreview.swift; sourceTree = "<group>"; };
 		90C5C2832783ACB500F3EF86 /* KeyEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEvents.swift; sourceTree = "<group>"; };
-		90DDCF46278E3B9B00F3BF44 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		90DDCF4B278E4A4100F3BF44 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		90DDCF4D278E5A1B00F3BF44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FA3340BC05CFEEA63A33FBA6 /* Pods-natural.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.release.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 		90C5C26527826B3B00F3EF86 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				90DDCF46278E3B9B00F3BF44 /* MainView.swift */,
 				90C5C26627826B5900F3EF86 /* ItemList.swift */,
 				90C5C26827826BC200F3EF86 /* AddItem.swift */,
 			);
@@ -399,7 +396,6 @@
 				90C5C28227839D3900F3EF86 /* SafariPreview.swift in Sources */,
 				90C5C26227826A5900F3EF86 /* Search.swift in Sources */,
 				90C5C25E27822C7500F3EF86 /* DetailWindowController.swift in Sources */,
-				90DDCF47278E3B9B00F3BF44 /* MainView.swift in Sources */,
 				90922026278E31E0001864CF /* EventMonitor.swift in Sources */,
 				90C5C2442781608300F3EF86 /* naturalApp.swift in Sources */,
 				90C5C26E278271B100F3EF86 /* MainButton.swift in Sources */,
