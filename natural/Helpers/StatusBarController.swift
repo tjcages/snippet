@@ -59,10 +59,11 @@ class StatusBarController {
     }
     
     func mouseEventHandler(_ event: NSEvent?) {
-        print("clicking out")
-        print(popover.isShown)
-        if(popover.isShown) {
+        if (popover.isShown) {
             hidePopover(event!)
+            
+            print("clicking out")
+            print(popover.isShown)
         }
     }
 }

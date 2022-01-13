@@ -16,7 +16,7 @@ struct ItemList: View {
     @Binding var addingLink: Bool
     @Binding var searchText: String
     
-    @State var selectKeeper: Int?
+    @State var selectKeeper: Int? = 1
     
     var data: [Links] {
         let queryData = session.links.filter({ link in
@@ -30,7 +30,6 @@ struct ItemList: View {
         let item = data[index - 1]
         guard let link = item.link else { return }
         openURL(link)
-        print("Posting")
         NotificationCenter.default.post(name: Notification.Name("WebPageOpened"), object: nil)
     }
     
@@ -52,12 +51,14 @@ struct ItemList: View {
             Divider()
                 .frame(height: 1)
                 .background(Color.white.opacity(0.1))
-            
-            List(data.indexed(), id: \.1.self, selection: $selectKeeper) { index, item in
-                ListItem(index: index + 1, item: item, selectKeeper: $selectKeeper)
+  
+            List {
+                ForEach(data.indexed(), id: \.1.self) { index, item in
+                    ListItem(index: index + 1, item: item, selectKeeper: $selectKeeper)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .removeBackground()
-            .padding([.bottom], 12)
             .contextMenu {
                 Button {
                     if let index = selectKeeper {
@@ -75,32 +76,11 @@ struct ItemList: View {
                 MainButton(type: .active) {
                     addingLink.toggle()
                 }
+            } else {
+                BottomMenu()
             }
             
             Spacer()
-            
-            HStack {
-                // Button, that when tapped shows 3 options
-                Menu {
-                    Button(action: {
-                        
-                    }) {
-                        Label("Add", systemImage: "plus.circle")
-                    }
-                    Button(action: {
-                        
-                    }) {
-                        Label("Delete", systemImage: "minus.circle")
-                    }
-                    Button(action: {
-                        
-                    }) {
-                        Label("Edit", systemImage: "pencil.circle")
-                    }
-                } label: {
-                    Image(systemName: "ellipsis.circle")
-                }
-            }
         }
         .onReceive(keyInputSubject) {
             if let index = selectKeeper {

@@ -47,6 +47,7 @@ struct ListItem: View {
             
             Text(item.name)
                 .font(.system(size: 16, weight: .regular, design: .rounded))
+                .foregroundColor(selectKeeper == index ? Color.white : Color.primary)
             
             Spacer()
             
@@ -78,21 +79,19 @@ struct ListItem: View {
                 }
             }
         }
-        .padding(4)
-        .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+        .padding(12)
+        .background(index == selectKeeper ? Color.blue.opacity(0.6).cornerRadius(8) : Color.clear.cornerRadius(8))
         .tag(index)
         .onHover { hovering in
             selectKeeper = index
         }
         .onLongHover(duration: 0.6) { hovering in
-            print(hovering)
-            if hovering {
+            if hovering && selectKeeper == index {
                 isPopover = true
             } else {
                 isPopover = false
             }
         }
-        .contentShape(Rectangle())
         .onTapGesture {
             guard let link = item.link else { return }
             openURL(link)

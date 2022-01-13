@@ -17,6 +17,7 @@ class DetailWindowController<RootView : View>: NSWindowController {
         window.titleVisibility = .hidden
         window.toolbar = nil
         window.styleMask.insert(.fullSizeContentView)
+        window.viewsNeedDisplay = true
         self.init(window: window)
     }
 }
