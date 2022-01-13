@@ -19,6 +19,16 @@ struct ListItem: View {
     @State var isPopover = false
     @State var image: NSImage?
     
+    private var eventMonitor: EventMonitor?
+    
+    init(index: Int, item: Links, selectKeeper: Binding<Int?>) {
+        self.index = index
+        self.item = item
+        self._selectKeeper = selectKeeper
+        
+        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown], handler: mouseEventHandler)
+    }
+    
     func getFavicon(_ link: URL) {
         do {
             try FavIcon.downloadPreferred(link, width: 24, height: 24) { result in
@@ -29,6 +39,23 @@ struct ListItem: View {
         } catch {
             print("ERROR: Couldn't get Favicon")
         }
+    }
+    
+    func openLink() {
+        // open selected link
+        guard let link = item.link else { return }
+        openURL(link)
+        NotificationCenter.default.post(name: Notification.Name("WebPageOpened"), object: nil)
+    }
+    
+    func hidePopover(_ sender: AnyObject) {
+        NSApp.sendAction(#selector(NSPopover.performClose(_:)), to: nil, from: nil)
+        eventMonitor?.stop()
+    }
+    
+    func mouseEventHandler(_ event: NSEvent?) {
+        print("M OUSTING")
+        hidePopover(event!)
     }
     
     var body: some View {
@@ -70,8 +97,7 @@ struct ListItem: View {
                         .background(Color.white.opacity(0.2))
                         .cornerRadius(4)
                     Button("") {
-                        guard let link = item.link else { return }
-                        openURL(link)
+                        openLink()
                     }
                     .opacity(0)
                     .frame(width: 0, height: 0, alignment: .top)
@@ -85,7 +111,7 @@ struct ListItem: View {
         .onHover { hovering in
             selectKeeper = index
         }
-        .onLongHover(duration: 0.6) { hovering in
+        .onLongHover(duration: 1.2) { hovering in
             if hovering && selectKeeper == index {
                 isPopover = true
             } else {
@@ -93,8 +119,7 @@ struct ListItem: View {
             }
         }
         .onTapGesture {
-            guard let link = item.link else { return }
-            openURL(link)
+            openLink()
         }
         .popover(isPresented: self.$isPopover, arrowEdge: .trailing) {
             if let link = item.link {

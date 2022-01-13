@@ -22,6 +22,9 @@ struct ItemList: View {
         let queryData = session.links.filter({ link in
             link.name.lowercased().contains(self.searchText.lowercased()) || searchText == ""
         })
+        DispatchQueue.main.async {
+            self.selectKeeper = 1
+        }
         return queryData
     }
     
@@ -47,6 +50,7 @@ struct ItemList: View {
                     addingLink.toggle()
                 }
             }
+            .zIndex(100)
             
             Divider()
                 .frame(height: 1)

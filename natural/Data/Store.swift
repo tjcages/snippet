@@ -123,7 +123,6 @@ class SessionStore: ObservableObject {
                     for document in querySnapshot!.documents {
                         let link = Links(id: document.documentID, dictionary: document.data())
                         self.links.append(link)
-                        print(link)
                     }
                 }
             }

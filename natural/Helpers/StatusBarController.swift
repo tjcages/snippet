@@ -19,6 +19,7 @@ class StatusBarController {
     init(_ popover: NSPopover)
     {
         self.popover = popover
+        popover.behavior = .transient
         statusBar = NSStatusBar.init()
         statusItem = statusBar.statusItem(withLength: 28.0)
         
@@ -32,6 +33,7 @@ class StatusBarController {
         }
         
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown], handler: mouseEventHandler)
+        eventMonitor = EventMonitor(mask: [.keyDown, .keyUp], handler: keyEventHandler)
         
         // Add a notification if a webpage is opened
         NotificationCenter.default.addObserver(self, selector: #selector(self.hidePopover), name: Notification.Name("WebPageOpened"), object: nil)
@@ -49,21 +51,27 @@ class StatusBarController {
     func showPopover(_ sender: AnyObject) {
         if let statusBarButton = statusItem.button {
             popover.show(relativeTo: statusBarButton.bounds, of: statusBarButton, preferredEdge: NSRectEdge.maxY)
+            print("Start")
             eventMonitor?.start()
         }
     }
     
     @objc func hidePopover(_ sender: AnyObject) {
+        print("Stop")
         popover.performClose(sender)
-        eventMonitor?.stop()
+        NSApp.sendAction(#selector(NSPopover.performClose(_:)), to: nil, from: nil)
+//        eventMonitor?.stop()
     }
     
     func mouseEventHandler(_ event: NSEvent?) {
-        if (popover.isShown) {
-            hidePopover(event!)
-            
-            print("clicking out")
-            print(popover.isShown)
-        }
+        hidePopover(event!)
+//        if (popover.isShown) {
+//            hidePopover(event!)
+//        }
+    }
+    
+    func keyEventHandler(_ event: NSEvent?) {
+        print(event)
+        print(event?.keyCode)
     }
 }

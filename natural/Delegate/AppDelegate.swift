@@ -21,10 +21,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Set the SwiftUI's ContentView to the Popover's ContentViewController
         popover.contentViewController = MainViewController()
         popover.contentSize = NSSize(width: 324, height: 400)
-        popover.contentViewController?.view = NSHostingView(rootView: contentView)
-        
-        // Create the Status Bar Item with the Popover
-        statusBar = StatusBarController.init(popover)
+        DispatchQueue.main.async {
+            self.popover.contentViewController?.view = NSHostingView(rootView: contentView)
+            
+            // Create the Status Bar Item with the Popover
+            self.statusBar = StatusBarController.init(self.popover)
+        }
         
         let application = NSApplication.shared
         application.presentationOptions = .autoHideMenuBar
