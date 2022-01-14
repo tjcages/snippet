@@ -1,8 +1,12 @@
-# Bookmark
+![app logo](https://github.com/tjcages/natural/blob/main/natural/Assets.xcassets/AppIcon.appiconset/app_logo-6.png)
+
+# Snīppet
 a macOS quick link finder
 
-just a fun side project based on [uiw.tf](https://uiw.tf/quick-links) – check out more [tylerj.me](https://www.tylerj.me)
+inspired by [uiw.tf](https://uiw.tf/quick-links) – get the [testFlight beta here](https://testflight.apple.com/join/RTRJrZYM)
 
-![app image](https://uploads-ssl.webflow.com/5f47fcf4fc81fecce371f46f/61d3a8048c30ea9d323d8f7e_natural-p-800.png)
+![app image](https://github.com/tjcages/natural/blob/main/snippet.gif)
 
-![app logo](https://github.com/tjcages/natural/blob/main/natural/Assets.xcassets/AppIcon.appiconset/app_logo-6.png)
+let me know on [twitter](https://twitter.com/tj_cages) what you'd like to see next
+
+check out more [tylerj.me](https://www.tylerj.me)
