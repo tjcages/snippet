@@ -3,7 +3,7 @@
 # Snīppet
 a macOS quick link finder
 
-inspired by [uiw.tf](https://uiw.tf/quick-links) – get the [testFlight beta here](https://testflight.apple.com/join/RTRJrZYM)
+inspired by [uiw.tf](https://uiw.tf/quick-links) – get on the [App Store here](https://apps.apple.com/us/app/sn%C4%ABppet/id1603296917)
 
 ![app image](https://github.com/tjcages/natural/blob/main/snippet.gif)
 
