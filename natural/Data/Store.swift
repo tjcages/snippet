@@ -10,6 +10,7 @@ import Firebase
 import Combine
 import FirebaseFirestore
 
+@MainActor
 class SessionStore: ObservableObject {
     
     @Published var links: [Links] = []
@@ -21,9 +22,6 @@ class SessionStore: ObservableObject {
     var handle: AuthStateDidChangeListenerHandle?
     
     init() {
-        // Configure the Firestore database
-        FirebaseApp.configure()
-        
         let settings = FirestoreSettings()
         settings.isPersistenceEnabled = false
                 

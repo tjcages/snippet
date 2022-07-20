@@ -1,16 +1,19 @@
-////
-////  naturalApp.swift
-////  natural
-////
-////  Created by Tyler Cagle on 1/1/22.
-////
 //
+//  naturalApp.swift
+//  natural
+//
+//  Created by Tyler Cagle on 1/1/22.
+//
+
 //import SwiftUI
 //import Firebase
 //
 //@main
 //struct naturalApp: App {
 //
+//    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+//
+//    @State private var window: NSWindow?
 //    private let keyInputSubject = KeyInputSubjectWrapper()
 //
 //    init() {

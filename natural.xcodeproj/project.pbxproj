@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		90656A8C278F95DA0041180F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 90656A8B278F95DA0041180F /* README.md */; };
 		90656A8E278F9EC20041180F /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90656A8D278F9EC20041180F /* BottomMenu.swift */; };
 		90656A90278FA4E50041180F /* SharingsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90656A8F278FA4E50041180F /* SharingsPicker.swift */; };
 		90922021278E3179001864CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90922020278E3179001864CF /* AppDelegate.swift */; };
@@ -21,7 +20,6 @@
 		90C5C24B2781608400F3EF86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C5C24A2781608400F3EF86 /* Preview Assets.xcassets */; };
 		90C5C25527816C2E00F3EF86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C25427816C2E00F3EF86 /* Extensions.swift */; };
 		90C5C25B278170ED00F3EF86 /* SystemColors in Frameworks */ = {isa = PBXBuildFile; productRef = 90C5C25A278170ED00F3EF86 /* SystemColors */; };
-		90C5C25E27822C7500F3EF86 /* DetailWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C25D27822C7500F3EF86 /* DetailWindowController.swift */; };
 		90C5C260278262D500F3EF86 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C25F278262D500F3EF86 /* ListItem.swift */; };
 		90C5C26227826A5900F3EF86 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26127826A5900F3EF86 /* Search.swift */; };
 		90C5C26427826AD900F3EF86 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5C26327826AD900F3EF86 /* TextView.swift */; };
@@ -61,7 +59,6 @@
 		011BF3AFFB698B0EBC1A6351 /* Pods-natural.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-natural.debug.xcconfig"; path = "Target Support Files/Pods-natural/Pods-natural.debug.xcconfig"; sourceTree = "<group>"; };
 		69BCED08D8A001005941F99B /* Pods_natural.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_natural.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90656A87278F95150041180F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = natural/README.md; sourceTree = "<group>"; };
-		90656A8B278F95DA0041180F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/README.md"; sourceTree = "<group>"; };
 		90656A8D278F9EC20041180F /* BottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
 		90656A8F278FA4E50041180F /* SharingsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingsPicker.swift; sourceTree = "<group>"; };
 		90922020278E3179001864CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +74,6 @@
 		90C5C24A2781608400F3EF86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90C5C24C2781608400F3EF86 /* natural.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = natural.entitlements; sourceTree = "<group>"; };
 		90C5C25427816C2E00F3EF86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		90C5C25D27822C7500F3EF86 /* DetailWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWindowController.swift; sourceTree = "<group>"; };
 		90C5C25F278262D500F3EF86 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		90C5C26127826A5900F3EF86 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		90C5C26327826AD900F3EF86 /* TextView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -123,7 +119,6 @@
 		90C5C2372781608300F3EF86 = {
 			isa = PBXGroup;
 			children = (
-				90656A8B278F95DA0041180F /* README.md */,
 				90C5C2422781608300F3EF86 /* natural */,
 				D5B38D23867AAA3B82089CDF /* Frameworks */,
 				90C5C2412781608300F3EF86 /* Products */,
@@ -186,7 +181,6 @@
 		90C5C25C27822C6400F3EF86 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				90C5C25D27822C7500F3EF86 /* DetailWindowController.swift */,
 				90922023278E31B8001864CF /* StatusBarController.swift */,
 				90922025278E31E0001864CF /* EventMonitor.swift */,
 				90DDCF4B278E4A4100F3BF44 /* Timer.swift */,
@@ -226,8 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				90C5C2432781608300F3EF86 /* naturalApp.swift */,
-				90C5C2832783ACB500F3EF86 /* KeyEvents.swift */,
 				90922020278E3179001864CF /* AppDelegate.swift */,
+				90C5C2832783ACB500F3EF86 /* KeyEvents.swift */,
 				90922027278E3212001864CF /* MainViewController.swift */,
 			);
 			path = Delegate;
@@ -327,7 +321,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90656A8C278F95DA0041180F /* README.md in Resources */,
 				90C5C24B2781608400F3EF86 /* Preview Assets.xcassets in Resources */,
 				90C5C2482781608400F3EF86 /* Assets.xcassets in Resources */,
 				90C5C2782782A47200F3EF86 /* GoogleService-Info.plist in Resources */,
@@ -404,7 +397,6 @@
 				90C5C27027828DF900F3EF86 /* Links.swift in Sources */,
 				90C5C28227839D3900F3EF86 /* SafariPreview.swift in Sources */,
 				90C5C26227826A5900F3EF86 /* Search.swift in Sources */,
-				90C5C25E27822C7500F3EF86 /* DetailWindowController.swift in Sources */,
 				90922026278E31E0001864CF /* EventMonitor.swift in Sources */,
 				90656A8E278F9EC20041180F /* BottomMenu.swift in Sources */,
 				90C5C2442781608300F3EF86 /* naturalApp.swift in Sources */,
@@ -552,12 +544,11 @@
 				INFOPLIST_FILE = natural/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylerj.natural;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -585,12 +576,11 @@
 				INFOPLIST_FILE = natural/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylerj.natural;
 				PRODUCT_NAME = "lil links";
 				SWIFT_EMIT_LOC_STRINGS = YES;
